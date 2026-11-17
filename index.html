@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anahata Prajñā</title>
+<meta name="description" content="Anahata Prajñā — le site arrive bientôt.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfcf8;
+    --ink: #4a4f48;
+    --ink-soft: #8a9086;
+    --green: #76b043;
+    --green-deep: #5a8c30;
+    --rose: #d23f74;
+    --halo: rgba(118, 176, 67, 0.10);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 560px;
+  }
+
+  .halo {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: min(420px, 86vw);
+    aspect-ratio: 1.3;
+  }
+
+  .halo::before,
+  .halo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--halo) 0%, rgba(118,176,67,0.04) 55%, transparent 72%);
+    animation: breathe 9s ease-in-out infinite;
+  }
+
+  .halo::after {
+    inset: 11%;
+    background: radial-gradient(circle, rgba(210,63,116,0.06) 0%, transparent 65%);
+    animation-delay: -4.5s;
+  }
+
+  .halo img {
+    position: relative;
+    z-index: 1;
+    width: min(380px, 78vw);
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(0.92); opacity: 0.7; }
+    50%      { transform: scale(1.06); opacity: 1; }
+  }
+
+  h1 {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: clamp(1.05rem, 3vw, 1.3rem);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    color: var(--ink-soft);
+  }
+
+  .rule {
+    width: 56px;
+    height: 1px;
+    background: linear-gradient(to right, var(--green), var(--rose));
+    border: none;
+    margin: 28px auto 26px;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 42ch;
+  }
+
+  .lead em {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .halo::before, .halo::after { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="halo">
+    <img src="assets/logo.png" alt="Anahata Prajñā — silhouette en méditation entourée d'animaux">
+  </div>
+
+  <h1>Bientôt</h1>
+
+  <hr class="rule">
+
+  <p class="lead">
+    Quelque chose se prépare, doucement.<br>
+    En attendant, <em>inspirez&hairsp;…&hairsp;expirez</em>.<br>
+    Le site ouvre bientôt ses portes.
+  </p>
+
+  <footer>Anahata Prajñā — à très bientôt</footer>
+</main>
+</body>
+</html>
