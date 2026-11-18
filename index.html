@@ -1,144 +1,593 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr-BE">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anahata Prajñā</title>
-<meta name="description" content="Anahata Prajñā — le site arrive bientôt.">
-<link rel="icon" type="image/png" href="assets/logo.png">
+<title>Anahata Prajñā | Chant de guérison à Thuin (Hainaut)</title>
+<meta name="description" content="Chant d&#x27;ancrage et chant vibratoire à Thuin, en Hainaut : apaiser le système nerveux, libérer les blocages émotionnels. Réservez un soin avec Mélissa Letenre.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Mélissa Letenre">
+<link rel="canonical" href="https://anahataprajna.be/">
+<meta name="theme-color" content="#f5efe6">
+<meta name="geo.region" content="BE-WHT">
+<meta name="geo.placename" content="Thuin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Anahata Prajñā">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:title" content="Anahata Prajñā | Chant de guérison à Thuin (Hainaut)">
+<meta property="og:description" content="Chant d&#x27;ancrage et chant vibratoire à Thuin, en Hainaut : apaiser le système nerveux, libérer les blocages émotionnels. Réservez un soin avec Mélissa Letenre.">
+<meta property="og:url" content="https://anahataprajna.be/">
+<meta property="og:image" content="https://anahataprajna.be/assets/partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Anahata Prajñā, chant de guérison à Thuin, par Mélissa Letenre">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icone-192.png">
+<link rel="apple-touch-icon" href="assets/icone-180.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #fbfcf8;
-    --ink: #4a4f48;
-    --ink-soft: #8a9086;
-    --green: #76b043;
-    --green-deep: #5a8c30;
-    --rose: #d23f74;
-    --halo: rgba(118, 176, 67, 0.10);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html, body { height: 100%; }
-
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Mulish", sans-serif;
-    font-weight: 300;
-    display: grid;
-    place-items: center;
-    padding: 24px 16px;
-    text-align: center;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 560px;
-  }
-
-  .halo {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: min(420px, 86vw);
-    aspect-ratio: 1.3;
-  }
-
-  .halo::before,
-  .halo::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--halo) 0%, rgba(118,176,67,0.04) 55%, transparent 72%);
-    animation: breathe 9s ease-in-out infinite;
-  }
-
-  .halo::after {
-    inset: 11%;
-    background: radial-gradient(circle, rgba(210,63,116,0.06) 0%, transparent 65%);
-    animation-delay: -4.5s;
-  }
-
-  .halo img {
-    position: relative;
-    z-index: 1;
-    width: min(380px, 78vw);
-    height: auto;
-    mix-blend-mode: multiply;
-  }
-
-  @keyframes breathe {
-    0%, 100% { transform: scale(0.92); opacity: 0.7; }
-    50%      { transform: scale(1.06); opacity: 1; }
-  }
-
-  h1 {
-    font-family: "Marcellus", serif;
-    font-weight: 400;
-    font-size: clamp(1.05rem, 3vw, 1.3rem);
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    margin-top: 4px;
-    color: var(--ink-soft);
-  }
-
-  .rule {
-    width: 56px;
-    height: 1px;
-    background: linear-gradient(to right, var(--green), var(--rose));
-    border: none;
-    margin: 28px auto 26px;
-  }
-
-  .lead {
-    font-size: 1.05rem;
-    line-height: 1.75;
-    color: var(--ink-soft);
-    max-width: 42ch;
-  }
-
-  .lead em {
-    font-style: italic;
-    color: var(--ink);
-  }
-
-  footer {
-    margin-top: 48px;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .halo::before, .halo::after { animation: none; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skin.css">
+<script src="js/frequences.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://anahataprajna.be/#site",
+      "url": "https://anahataprajna.be/",
+      "name": "Anahata Prajñā",
+      "alternateName": "Anahata Prajna",
+      "inLanguage": "fr-BE",
+      "publisher": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      }
+    },
+    {
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://anahataprajna.be/#entreprise",
+      "name": "Anahata Prajñā",
+      "alternateName": "Anahata Prajna",
+      "description": "Anahata Prajñā est l'espace de soin par la voix de Mélissa Letenre, praticienne et enseignante en chant d'ancrage et vibratoire à Thuin (Hainaut, Belgique), spécialisée dans la libération des traumatismes émotionnels. Deux approches de chant de guérison : le chant d'ancrage et le chant vibratoire, pour les personnes comme pour les animaux.",
+      "url": "https://anahataprajna.be/",
+      "logo": "https://anahataprajna.be/assets/logo.png",
+      "image": "https://anahataprajna.be/assets/partage.png",
+      "email": "melissaletenre@hotmail.com",
+      "vatID": "BE1043581527",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "6530",
+        "addressLocality": "Thuin",
+        "addressRegion": "Hainaut",
+        "addressCountry": "BE"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Thuin"
+        },
+        {
+          "@type": "City",
+          "name": "Beaumont"
+        }
+      ],
+      "knowsLanguage": "fr",
+      "founder": {
+        "@id": "https://anahataprajna.be/#melissa-letenre"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/m%C3%A9lissa-letenre-95551a72"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Soins et enseignement",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://anahataprajna.be/chant-ancrage.html#chant-ancrage"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://anahataprajna.be/chant-vibratoire.html#chant-vibratoire"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://anahataprajna.be/vivant.html#soins-animaux"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://anahataprajna.be/#melissa-letenre",
+      "name": "Mélissa Letenre",
+      "jobTitle": "Praticienne et enseignante en chant d'ancrage et vibratoire",
+      "worksFor": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      },
+      "knowsAbout": [
+        "Chant de guérison",
+        "Chant d'ancrage",
+        "Chant vibratoire",
+        "Sonopuncture",
+        "Sons de guérison de la tradition Bön tibétaine",
+        "Soins aux animaux"
+      ],
+      "knowsLanguage": "fr",
+      "sameAs": [
+        "https://www.linkedin.com/in/m%C3%A9lissa-letenre-95551a72"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://anahataprajna.be/#page",
+      "url": "https://anahataprajna.be/",
+      "name": "Anahata Prajñā | Chant de guérison à Thuin (Hainaut)",
+      "description": "Chant d'ancrage et chant vibratoire à Thuin, en Hainaut : apaiser le système nerveux, libérer les blocages émotionnels. Réservez un soin avec Mélissa Letenre.",
+      "inLanguage": "fr-BE",
+      "isPartOf": {
+        "@id": "https://anahataprajna.be/#site"
+      },
+      "about": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://anahataprajna.be/assets/partage.png",
+        "width": 1200,
+        "height": 630
+      },
+      "dateModified": "2026-11-18"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://anahataprajna.be/chant-ancrage.html#chant-ancrage",
+      "name": "Chant d'ancrage",
+      "serviceType": "Chant de guérison",
+      "description": "Pratique vocale issue des cinq sons de guérison de la tradition Bön tibétaine, pour s'ancrer, relâcher la tension par sa propre voix et retrouver un sentiment de sécurité intérieure. Séances collectives aux Jardins de Samye Ling, à Beaumont, et séances individuelles.",
+      "url": "https://anahataprajna.be/chant-ancrage.html",
+      "provider": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Thuin"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://anahataprajna.be/chant-vibratoire.html#chant-vibratoire",
+      "name": "Chant vibratoire",
+      "serviceType": "Chant de guérison",
+      "description": "Soin sonore individuel, en présence : un tissage vibratoire par la voix, pour aider à libérer les blocages émotionnels profonds.",
+      "url": "https://anahataprajna.be/chant-vibratoire.html",
+      "provider": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Thuin"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://anahataprajna.be/vivant.html#soins-animaux",
+      "name": "Soins aux animaux",
+      "serviceType": "Chant de guérison",
+      "description": "Soins par le chant proposés aux chevaux et aux autres animaux, par une soigneuse animalière diplômée.",
+      "url": "https://anahataprajna.be/vivant.html",
+      "provider": {
+        "@id": "https://anahataprajna.be/#entreprise"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Thuin"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://anahataprajna.be/#questions",
+      "isPartOf": {
+        "@id": "https://anahataprajna.be/#page"
+      },
+      "inLanguage": "fr-BE",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le chant d'ancrage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le chant d'ancrage est une pratique vocale issue des cinq sons de guérison de la tradition Bön tibétaine. Il aide à s'ancrer, à relâcher la tension par sa propre voix et à retrouver un sentiment de sécurité intérieure. Il se pratique en séance collective ou individuelle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le chant vibratoire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le chant vibratoire est un soin sonore individuel. La praticienne se relie au cœur de la personne, puis tisse avec sa voix une trame vibratoire, à la recherche de l'endroit où le corps en a besoin, pour aider à libérer les émotions bloquées."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À qui s'adressent les séances ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "À toute personne qui en ressent le besoin, à tout âge, enfants compris. En particulier aux personnes stressées ou angoissées, à celles qui ont vécu un traumatisme, et à celles qui souhaitent mieux sentir leur corps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se déroule une séance de chant d'ancrage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En cinq temps : un accueil avec un tour de parole, un éveil du corps et du souffle, la découverte des sons, les mantras chantés, puis une prière tibétaine pour lâcher prise. La séance collective dure une demi-journée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour une séance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une tenue confortable et une bouteille d'eau : il est important de bien s'hydrater avant et après avoir chanté. Un tapis ou un coussin si vous le souhaitez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il un contact physique ? Les soins se font-ils à distance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour une personne, le soin se fait sans contact : les mains restent à quelques centimètres du corps. Il a toujours lieu en présence, jamais à distance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Où ont lieu les séances ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les séances collectives de chant d'ancrage ont lieu aux Jardins de Samye Ling, centre bouddhiste tibétain à Beaumont, dans le Hainaut. Anahata Prajñā est établi à Thuin, en Belgique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proposez-vous des soins aux animaux ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Mélissa Letenre est aussi soigneuse animalière diplômée : elle propose des soins par le chant aux chevaux et aux autres animaux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que signifie Anahata Prajñā ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anahata est, en sanskrit, le nom du chakra du cœur ; Prajñā désigne la sagesse et l'intuition. Anahata Prajñā (parfois écrit « Anahata Prajna ») unit la douceur du cœur à la clarté de l'intuition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En envoyant une demande depuis la page de réservation, ou par e-mail. Les séances collectives de chant d'ancrage se réservent aussi sur le site des Jardins de Samye Ling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le chant de guérison remplace-t-il un suivi médical ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le chant de guérison est un accompagnement de bien-être : il ne remplace ni un avis médical ni un suivi psychologique."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
-<body>
-<main>
-  <div class="halo">
-    <img src="assets/logo.png" alt="Anahata Prajñā — silhouette en méditation entourée d'animaux">
+<body data-freq="639">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Anahata Prajñā — accueil">
+      <img class="logo-figure" src="assets/logo-figure.png" alt="" width="360" height="370">
+      <img class="logo-nom" src="assets/logo-nom.png" alt="Anahata Prajñā" width="900" height="124">
+    </a>
+    <nav aria-label="Navigation principale">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul class="nav-menu" id="menu" data-nav-menu>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="essence.html">L'essence</a></li>
+        <li><a href="chant-ancrage.html">Chant d'ancrage</a></li>
+        <li><a href="chant-vibratoire.html">Chant vibratoire</a></li>
+        <li><a href="vivant.html">Le vivant</a></li>
+        <li><a href="contact.html" class="nav-cta">Réserver un soin</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <h1>Bientôt</h1>
+<main id="contenu">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1><span class="kicker">Chant de guérison à Thuin, en Belgique</span> La voix qui <em>ramène</em> à la terre</h1>
+        <p>Chant d'ancrage et chant vibratoire pour libérer les traumatismes émotionnels, apaiser le système nerveux et retrouver la sécurité intérieure.</p>
+        <div class="actions">
+          <a class="btn btn-moss" href="contact.html#demande">Réserver un soin</a>
+          <a class="btn btn-line" href="#soins">Découvrir les soins</a>
+        </div>
+      </div>
+      <figure class="plaque">
+        <div class="plaque-disc"><canvas data-chladni data-m="3" data-n="4" data-sign="-" aria-hidden="true"></canvas></div>
+        <figcaption>
+          <p class="plaque-hz"><b>639</b>Hz <span>Anahata · le cœur</span></p>
+          <a class="ecoute" href="#frequences">
+            <span class="ecoute-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            Écouter les fréquences
+          </a>
+          <p class="plaque-note">Le sable dessine la forme du son. Touchez la plaque pour le disperser.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-  <hr class="rule">
+  <div class="mantra">Libérer <span>◦</span> Donner <span>◦</span> Lâcher prise <span>◦</span> « YAM »</div>
 
-  <p class="lead">
-    Quelque chose se prépare, doucement.<br>
-    En attendant, <em>inspirez&hairsp;…&hairsp;expirez</em>.<br>
-    Le site ouvre bientôt ses portes.
-  </p>
+  <section class="section">
+    <div class="wrap split">
+      <div data-reveal>
+        <span class="label">Un espace de soin par la voix</span>
+        <h2>Le cœur <em>et</em> l'intuition</h2>
+        <p class="lead">Praticienne et enseignante en chant d'ancrage et vibratoire, spécialisée dans la libération des traumatismes émotionnels, j'utilise la voix et les fréquences sonores pour vous accompagner sur votre chemin de transformation.</p>
+        <a class="text-link" href="essence.html">Lire l'essence d'Anahata Prajñā</a>
+      </div>
+      <ul class="rows" data-reveal>
+        <li>
+          <span class="name">Anahata</span>
+          <div><p>Le « souffle non frappé », quatrième chakra, point d'équilibre entre toutes nos énergies. Il ouvre les portes de la compassion, du pardon et de l'amour inconditionnel.</p><small>Chakra du cœur · vert · note Fa</small></div>
+        </li>
+        <li>
+          <span class="name">Prajñā</span>
+          <div><p>La Connaissance, la Sagesse : une intuition au-delà du mental, véritable force tranquille, qui guide les mains et la voix lors de chaque soin vibratoire.</p><small>Pra « au-delà » · Jñā « connaître »</small></div>
+        </li>
+        <li>
+          <span class="name">Le lotus</span>
+          <div><p>Il prend racine dans un étang boueux pour éclore à la surface. Chaque être humain porte en lui la capacité de se transformer et de s'élever.</p><small>Renaissance · transformation</small></div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <footer>Anahata Prajñā — à très bientôt</footer>
+  <div class="onde" data-onde></div>
+
+  <section class="section section--dark" id="soins">
+    <div class="wrap">
+      <span class="label">Deux chemins par la voix</span>
+      <h2>Les <em>soins</em></h2>
+      <div class="soins" data-reveal>
+        <article class="soin">
+          <span class="hz">Ancrer</span>
+          <h3>Le chant d'ancrage</h3>
+          <p>Cinq sons de guérison venus du Tibet, le souffle et la vibration de la voix, pour s'ancrer, apaiser son système nerveux et retrouver un sentiment de sécurité intérieure.</p>
+          <div class="actions">
+            <a class="btn btn-moss" href="contact.html?soin=ancrage#demande">Réserver une séance</a>
+            <a class="btn btn-line" href="chant-ancrage.html">Découvrir le chant d'ancrage</a>
+          </div>
+        </article>
+        <article class="soin">
+          <span class="hz">Libérer</span>
+          <h3>Le chant vibratoire</h3>
+          <p>La sonopuncture : comme l'acupuncture, mais avec les sons. Un soin individuel, par la voix, là où le corps en a besoin.</p>
+          <div class="actions">
+            <a class="btn btn-moss" href="contact.html?soin=vibratoire#demande">Réserver un soin</a>
+            <a class="btn btn-line" href="chant-vibratoire.html">Découvrir le chant vibratoire</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split split--even split--center">
+      <div class="illustration" data-reveal><img src="assets/logo-figure.png" alt="" width="360" height="370" loading="lazy"></div>
+      <div data-reveal>
+        <span class="label">Nature et vivant</span>
+        <h2>Aux côtés des <em>chevaux</em></h2>
+        <p class="lead">Mon univers est très lié à la nature et au vivant, avec une connexion particulière aux chevaux, qui font partie intégrante de mon approche.</p>
+        <div class="actions actions--spaced">
+          <a class="btn btn-forest" href="contact.html?soin=animal#demande">Demander un soin pour un animal</a>
+          <a class="btn btn-outline" href="vivant.html">Découvrir le vivant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="frequences" data-instrument>
+    <div class="wrap">
+      <span class="label">Les fréquences</span>
+      <h2>Sept fréquences, <em>un bol chantant</em></h2>
+      <p class="lead">Faites glisser le curseur d'une fréquence à l'autre : le sable se réorganise et le bol change de note. Puis faites-le chanter.</p>
+      <div class="instrument" data-reveal>
+        <div class="plaque plaque--large">
+          <div class="plaque-disc"><canvas data-instrument-plate aria-hidden="true"></canvas></div>
+        </div>
+        <div class="instrument-panel">
+          <ol class="tones" data-tones>
+            <li data-hz="396" data-m="1" data-n="2" data-sign="+" data-tone="#8f5a4c">
+              <p class="tone-hz"><b>396</b> Hz</p>
+              <h3>Racine <span>Muladhara · note Do</span></h3>
+              <p>Ancrage et sécurité.</p>
+            </li>
+            <li data-hz="417" data-m="1" data-n="3" data-sign="-" data-tone="#8a6a3c">
+              <p class="tone-hz"><b>417</b> Hz</p>
+              <h3>Sacré <span>Swadhisthana · note Ré</span></h3>
+              <p>Créativité et émotions.</p>
+            </li>
+            <li data-hz="528" data-m="2" data-n="3" data-sign="+" data-tone="#7d6c34">
+              <p class="tone-hz"><b>528</b> Hz</p>
+              <h3>Plexus solaire <span>Manipura · note Mi</span></h3>
+              <p>Confiance et transformation.</p>
+            </li>
+            <li data-hz="639" data-m="3" data-n="4" data-sign="-" data-tone="#5f7050">
+              <p class="tone-hz"><b>639</b> Hz</p>
+              <h3>Cœur <span>Anahata · note Fa</span></h3>
+              <p>Amour et compassion.</p>
+            </li>
+            <li data-hz="741" data-m="3" data-n="5" data-sign="+" data-tone="#4f6f7a">
+              <p class="tone-hz"><b>741</b> Hz</p>
+              <h3>Gorge <span>Vishuddha · note Sol</span></h3>
+              <p>Vérité et expression.</p>
+            </li>
+            <li data-hz="852" data-m="4" data-n="5" data-sign="-" data-tone="#6a5d82">
+              <p class="tone-hz"><b>852</b> Hz</p>
+              <h3>Troisième œil <span>Ajna · note La</span></h3>
+              <p>Intuition et conscience.</p>
+            </li>
+            <li data-hz="963" data-m="5" data-n="6" data-sign="+" data-tone="#7d5f86">
+              <p class="tone-hz"><b>963</b> Hz</p>
+              <h3>Coronal <span>Sahasrara · note Si</span></h3>
+              <p>Spiritualité et illumination.</p>
+            </li>
+          </ol>
+          <div class="actions">
+            <button type="button" class="btn btn-tone" data-bol>Faire chanter le bol</button>
+            <button type="button" class="btn btn-line" data-bol-stop disabled>Faire silence</button>
+          </div>
+          <p class="bol-status" role="status" data-bol-status></p>
+        </div>
+        <div class="slider" data-slider hidden>
+          <label for="curseur-frequence">Choisir une fréquence</label>
+          <input type="range" id="curseur-frequence" min="0" max="6" step="1" value="3" data-tone-range>
+          <div class="slider-ticks" data-ticks aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="instrument-note">Le bol sonne une octave sous la fréquence choisie, pour rester doux à l'oreille. Il s'éteint de lui-même en une vingtaine de secondes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="questions">
+    <div class="wrap split">
+      <div data-reveal>
+        <span class="label">Questions fréquentes</span>
+        <h2>Avant de <em>réserver</em></h2>
+        <p class="lead">Les réponses aux questions les plus courantes. Pour tout le reste, écrivez-moi.</p>
+      </div>
+      <div class="faq" data-reveal>
+        <details>
+          <summary><h3>Qu'est-ce que le chant d'ancrage ?</h3></summary>
+          <p>Le chant d'ancrage est une pratique vocale issue des cinq sons de guérison de la tradition Bön tibétaine. Il aide à s'ancrer, à relâcher la tension par sa propre voix et à retrouver un sentiment de sécurité intérieure. Il se pratique en séance collective ou individuelle.</p>
+        </details>
+        <details>
+          <summary><h3>Qu'est-ce que le chant vibratoire ?</h3></summary>
+          <p>Le chant vibratoire est un soin sonore individuel. La praticienne se relie au cœur de la personne, puis tisse avec sa voix une trame vibratoire, à la recherche de l'endroit où le corps en a besoin, pour aider à libérer les émotions bloquées.</p>
+        </details>
+        <details>
+          <summary><h3>À qui s'adressent les séances ?</h3></summary>
+          <p>À toute personne qui en ressent le besoin, à tout âge, enfants compris. En particulier aux personnes stressées ou angoissées, à celles qui ont vécu un traumatisme, et à celles qui souhaitent mieux sentir leur corps.</p>
+        </details>
+        <details>
+          <summary><h3>Comment se déroule une séance de chant d'ancrage ?</h3></summary>
+          <p>En cinq temps : un accueil avec un tour de parole, un éveil du corps et du souffle, la découverte des sons, les mantras chantés, puis une prière tibétaine pour lâcher prise. La séance collective dure une demi-journée.</p>
+        </details>
+        <details>
+          <summary><h3>Que faut-il prévoir pour une séance ?</h3></summary>
+          <p>Une tenue confortable et une bouteille d'eau : il est important de bien s'hydrater avant et après avoir chanté. Un tapis ou un coussin si vous le souhaitez.</p>
+        </details>
+        <details>
+          <summary><h3>Y a-t-il un contact physique ? Les soins se font-ils à distance ?</h3></summary>
+          <p>Pour une personne, le soin se fait sans contact : les mains restent à quelques centimètres du corps. Il a toujours lieu en présence, jamais à distance.</p>
+        </details>
+        <details>
+          <summary><h3>Où ont lieu les séances ?</h3></summary>
+          <p>Les séances collectives de chant d'ancrage ont lieu aux Jardins de Samye Ling, centre bouddhiste tibétain à Beaumont, dans le Hainaut. Anahata Prajñā est établi à Thuin, en Belgique.</p>
+        </details>
+        <details>
+          <summary><h3>Proposez-vous des soins aux animaux ?</h3></summary>
+          <p>Oui. Mélissa Letenre est aussi soigneuse animalière diplômée : elle propose des soins par le chant aux chevaux et aux autres animaux.</p>
+        </details>
+        <details>
+          <summary><h3>Que signifie Anahata Prajñā ?</h3></summary>
+          <p>Anahata est, en sanskrit, le nom du chakra du cœur ; Prajñā désigne la sagesse et l'intuition. Anahata Prajñā (parfois écrit « Anahata Prajna ») unit la douceur du cœur à la clarté de l'intuition.</p>
+        </details>
+        <details>
+          <summary><h3>Comment réserver ?</h3></summary>
+          <p>En envoyant une demande depuis la page de réservation, ou par e-mail. Les séances collectives de chant d'ancrage se réservent aussi sur le site des Jardins de Samye Ling.</p>
+        </details>
+        <details>
+          <summary><h3>Le chant de guérison remplace-t-il un suivi médical ?</h3></summary>
+          <p>Non. Le chant de guérison est un accompagnement de bien-être : il ne remplace ni un avis médical ni un suivi psychologique.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint center">
+    <div class="wrap" data-reveal>
+      <span class="label">Aller plus loin</span>
+      <h2>Le bol n'est qu'un <em>avant-goût</em></h2>
+      <p class="lead">En séance, c'est la voix qui vous accompagne, au plus près de ce dont vous avez besoin. Réservez un soin, ou écrivez-moi pour en parler d'abord.</p>
+      <div class="actions">
+        <a class="btn btn-forest" href="contact.html#demande">Réserver un soin</a>
+        <a class="btn btn-outline" href="contact.html?soin=question#demande">Poser une question</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Anahata Prajñā</p>
+        <p>Chant d'ancrage et chant vibratoire, pour les personnes et pour les animaux.<br>Thuin, Belgique.</p>
+        <a class="btn btn-moss footer-cta" href="contact.html#demande">Réserver un soin</a>
+      </div>
+      <div>
+        <h3>Le site</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="essence.html">L'essence</a></li>
+          <li><a href="chant-ancrage.html">Chant d'ancrage</a></li>
+          <li><a href="chant-vibratoire.html">Chant vibratoire</a></li>
+          <li><a href="vivant.html">Le vivant</a></li>
+          <li><a href="contact.html">Réserver un soin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          <ul>
+            <li><a href="mailto:melissaletenre@hotmail.com">melissaletenre@hotmail.com</a></li>
+            <li>Séances collectives : Les Jardins de Samye Ling, Beaumont</li>
+            <li>Thuin, Belgique</li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© Anahata Prajñā — Mélissa Letenre · TVA BE 1043.581.527</span>
+      <span class="mention">Le chant de guérison est un accompagnement de bien-être : il ne remplace pas un suivi médical ou psychologique.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="barre-mobile">
+  <a class="btn btn-moss" href="contact.html#demande">Réserver un soin</a>
+  <a class="btn btn-line" href="mailto:melissaletenre@hotmail.com">Écrire</a>
+</div>
+
 </body>
 </html>

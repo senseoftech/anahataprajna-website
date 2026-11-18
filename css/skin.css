@@ -1,0 +1,146 @@
+/* Modèle G — Lin : beiges et taupes, couleurs douces. Aucun bloc sombre hormis le pied de page.
+   Autour de la plaque, le sable est ratissé en cercles, comme dans un jardin sec. */
+
+body {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --display-weight: 400;
+  --em-style: italic;
+  --radius: 22px;
+  --radius-btn: 999px;
+  --radius-field: 12px;
+
+  --lin: #f5efe6;
+  --greige: #ece3d6;
+  --creme: #fbf7f1;
+  --taupe: #7a6858;
+  --taupe-deep: #4d4239;
+  --rose: #9a5460;
+
+  --L-bg: var(--lin);
+  --L-alt: var(--greige);
+  --L-surface: var(--creme);
+  --L-ink: #4a4038;
+  --L-soft: #6f6358;
+  --L-line: #ddd1c1;
+  --L-label: var(--taupe);
+  --L-em: var(--rose);
+  --L-btn-bg: var(--taupe);
+  --L-btn-ink: var(--creme);
+  --L-btn2: var(--taupe);
+
+  --D-bg: var(--taupe-deep);
+  --D-ink: var(--lin);
+  --D-soft: rgba(245, 239, 230, 0.8);
+  --D-line: rgba(245, 239, 230, 0.18);
+  --D-label: #d9bfae;
+  --D-em: #e6cdbd;
+  --D-surface: rgba(255, 255, 255, 0.05);
+  --D-btn-bg: var(--lin);
+  --D-btn-ink: var(--taupe-deep);
+  --D-btn2: var(--lin);
+
+  --header-bg: rgba(245, 239, 230, 0.92);
+  --header-solid: var(--lin);
+  --header-ink: #4a4038;
+  --header-soft: #6f6358;
+  --header-line: #e2d7c8;
+  --nav-cta-bg: var(--taupe);
+  --nav-cta-ink: var(--creme);
+
+  --plate-sand: var(--freq-deep);
+  --tone-ink: var(--creme);
+  --wave-1: var(--taupe);
+  --wave-2: var(--rose);
+  --todo: var(--rose);
+  --focus: var(--taupe);
+  --focus-ring: rgba(122, 104, 88, 0.25);
+  --ring: rgba(122, 104, 88, 0.3);
+  --photo-bg: linear-gradient(160deg, #e6dccd, #d9cbb8);
+  --photo-ink: #6f6358;
+}
+
+/* Les couleurs des fréquences, adoucies */
+body[data-freq="396"] { --freq: #c0907f; --freq-deep: #8f5a4c; }
+body[data-freq="417"] { --freq: #c9a577; --freq-deep: #8a6a3c; }
+body[data-freq="528"] { --freq: #c7b67d; --freq-deep: #7d6c34; }
+body[data-freq="639"] { --freq: #9bab84; --freq-deep: #5f7050; }
+body[data-freq="741"] { --freq: #8fa9b3; --freq-deep: #4f6f7a; }
+body[data-freq="852"] { --freq: #a79bb8; --freq-deep: #6a5d82; }
+
+.site-header { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+
+/* Cormorant a un petit œil : les titres sont agrandis */
+.hero h1 { font-size: clamp(2.9rem, 6.8vw, 5rem); line-height: 1.04; }
+.hero--page h1 { font-size: clamp(2.7rem, 6vw, 4.3rem); line-height: 1.04; }
+.section h2 { font-size: clamp(2.2rem, 4.8vw, 3.3rem); }
+.soin h3 { font-size: 2.1rem; }
+.points h3 { font-size: 1.65rem; }
+.offre h3 { font-size: 2rem; }
+.faq summary h3 { font-size: 1.5rem; }
+.etapes h3 { font-size: 1.75rem; }
+.etapes li::before, .sons b { font-size: 2.7rem; }
+.tones h3 { font-size: 2.2rem; }
+.rows .name { font-size: 1.85rem; }
+.coords a, .coords p { font-size: 1.7rem; }
+.footer-brand { font-size: 1.7rem; }
+.plaque-hz { font-size: 1.2rem; }
+.plaque-hz b { font-size: 2.5rem; }
+.kicker, .label { font-weight: 500; letter-spacing: 0.22em; }
+.btn { font-weight: 500; letter-spacing: 0.05em; }
+.mantra { background: transparent; border-block: 1px solid var(--L-line); font-size: 1.3rem; }
+
+/* Ouverture : lin clair, plaque crème posée sur un sable ratissé en cercles */
+.hero { background: linear-gradient(180deg, #f0e7da 0%, var(--lin) 100%); }
+.plaque { position: relative; isolation: isolate; }
+.plaque::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -22%;
+  width: 144%;
+  aspect-ratio: 1;
+  transform: translateY(-15.28%);
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, transparent 0 11px, rgba(122, 104, 88, 0.2) 11px 12px);
+  -webkit-mask: radial-gradient(circle, #000 50%, transparent 70%);
+  mask: radial-gradient(circle, #000 50%, transparent 70%);
+  pointer-events: none;
+}
+.plaque-disc { background: var(--creme); border-color: #d8cbb9; box-shadow: 0 24px 60px rgba(77, 66, 57, 0.1); }
+.plaque figcaption { margin-top: 74px; }
+
+/* Les soins et le curseur restent clairs */
+#soins, [data-instrument] {
+  --c-ink: var(--L-ink);
+  --c-soft: var(--L-soft);
+  --c-line: var(--L-line);
+  --c-label: var(--L-label);
+  --c-em: var(--L-em);
+  --c-surface: var(--L-surface);
+  --c-btn-bg: var(--L-btn-bg);
+  --c-btn-ink: var(--L-btn-ink);
+  --c-btn2: var(--L-btn2);
+}
+#soins { --c-bg: var(--greige); }
+[data-instrument] { --c-bg: #e9dfd0; margin: 0 20px; border-radius: 36px; overflow: hidden; }
+[data-instrument] .instrument { row-gap: 78px; }
+
+/* L'appel final : un bandeau taupe arrondi */
+.section--cta {
+  --c-bg: var(--taupe);
+  --c-ink: var(--creme);
+  --c-soft: #f3ebe0;
+  --c-line: rgba(251, 247, 241, 0.3);
+  --c-label: var(--creme);
+  --c-em: #f1dccd;
+  --c-btn-bg: var(--creme);
+  --c-btn-ink: #5a4a3d;
+  --c-btn2: var(--creme);
+  margin: 0 20px 20px;
+  border-radius: 36px;
+}
+@media (max-width: 700px) {
+  [data-instrument], .section--cta { margin-inline: 10px; border-radius: 26px; }
+}
